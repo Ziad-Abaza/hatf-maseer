@@ -35,7 +35,7 @@
                     </li>
 
                     <li class="col-md-6 col-sm-12 mb-2">
-                     <a href="https://wa.me/{{ config('setting.contact.phone') }}" target="_blank">{{ __('frontend/footer.phones.phones') }}</a>
+                     <a href="https://wa.me/+966{{ config('setting.contact.phone') }}?text=مرحبا+مسير" target="_blank">{{ __('frontend/footer.phones.phones') }}</a>
                     </li>
                     <li class="col-md-6 col-sm-12 mb-2">
                     <a href="mailto:{{ config('setting.contact.email') }}">{{ config('setting.contact.email') }}</a>
