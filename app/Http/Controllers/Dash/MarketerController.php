@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Str;
 
+
 class MarketerController extends Controller
 {
     public function __construct()
@@ -48,7 +49,6 @@ class MarketerController extends Controller
         $asciiName = Str::ascii($request->name);
         $nameInitials = strtoupper(substr(preg_replace('/[^A-Za-z]/', '', $asciiName), 0, 2));
 
-
         $day = now()->format('d');
 
         $phone = preg_replace('/\D/', '', $request->phone);
@@ -61,7 +61,6 @@ class MarketerController extends Controller
             'phone' => $request->phone,
             'referral_code' => $referralCode,
         ]);
-
 
         session()->flash('message', __('share.message.create'));
         return redirect()->route('marketers.index')->with('success', __('share.message.create'));

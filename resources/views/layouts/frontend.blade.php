@@ -53,6 +53,7 @@
         style="position: fixed; width: 40px; height: 40px; bottom: 20px; right: 20px; background-color: #25D366; border-radius: 50%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); z-index: 1000; display: flex; align-items: center; justify-content: center; color: white; outline: none; text-decoration: none; transition: transform 0.3s ease;">
         <i class="fab fa-whatsapp" style="font-size: 22px;"></i>
     </a>
+
     <!-- ====== Footer Start ====== -->
     @include('layouts.frontend_share.ud-footer')
     <!-- ====== Footer End ====== -->
