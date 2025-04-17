@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Dash;
 use App\Models\Marketer;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
+
 
 class MarketerController extends Controller
 {
@@ -44,13 +46,15 @@ class MarketerController extends Controller
             'phone' => 'required|numeric|unique:marketers,phone',
         ]);
 
-        $nameInitials = preg_replace('/[^A-Za-z]/', '', substr($request->name, 0, 2));
+        $asciiName = Str::ascii($request->name);
+        $nameInitials = strtoupper(substr(preg_replace('/[^A-Za-z]/', '', $asciiName), 0, 2));
 
-        $date = now()->format('Ymd');
+        $day = now()->format('d');
 
-        $randomCode = strtoupper(\Illuminate\Support\Str::random(4));
+        $phone = preg_replace('/\D/', '', $request->phone);
+        $lastTwoPhoneDigits = substr($phone, -2);
 
-        $referralCode = $nameInitials . $date . $randomCode;
+        $referralCode = $day . $lastTwoPhoneDigits . $nameInitials;
 
         Marketer::create([
             'name' => $request->name,
