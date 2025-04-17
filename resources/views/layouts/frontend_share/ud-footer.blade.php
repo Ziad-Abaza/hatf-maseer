@@ -11,7 +11,7 @@
                     </a>
                     <a href="https://wa.me/+966{{ config('setting.contact.phone') }}" target="_blank">
                         <img src="{{ asset('frontend/images/whatsapp.svg') }}">
-                    </a>                    
+                    </a>
                     <a href="{{config('setting.social_media.instagram')}}" target="_blank">
                         <img src="{{ asset('frontend/images/ri_instagram-line.svg') }}" alt="انستجرام">
                     </a>
@@ -54,7 +54,7 @@
             </p>
             <hr class="my-1" />
             <p class="translatable text-black-50 mb-1" data-ar="{{__('frontend/footer.rights.b')}}" data-en="{{__('frontend/footer.rights.b')}}">
-             <a style="text-decoration: underline;" href="https://hatf.sa">{{__('frontend/footer.rights.b')}}</a>  
+             <a style="text-decoration: underline;" href="https://hatf.sa">{{__('frontend/footer.rights.b')}}</a>
             </p>
         </div>
 

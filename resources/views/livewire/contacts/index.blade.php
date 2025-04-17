@@ -68,6 +68,7 @@
                         <th>{{ __('contacts/index.name') }}</th>
                         <th>{{ __('contacts/index.details') }}</th>
                         <th>{{ __('contacts/index.message') }}</th>
+                        <th>{{ __('contacts/index.marketer') }}</th>
                         <th>{{ __('contacts/index.actions') }}</th>
                     </tr>
                 </thead>
@@ -96,6 +97,14 @@
                                     </a>
                                 </div>
                                 <div class="p-2">
+                                    <strong>{{ __('contacts/index.marketer') }}:</strong>
+                                    @if ($contact->marketer)
+                                    <i class="ti ti-user-check text-primary"></i> {{ $contact->marketer->name }}
+                                    @else
+                                    <span class="text-muted">لا يوجد مسوق</span>
+                                    @endif
+                                </div>
+                                <div class="p-2">
                                     <strong>{{ __('contacts/index.actions') }}:</strong>
                                     <div class="dropdown">
                                         <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -105,13 +114,16 @@
                                             <button class="dropdown-item text-danger" type="button" wire:click="delete({{ $contact->id }})">
                                                 <i class="ti ti-trash"></i> حذف
                                             </button>
-                                            <a class="dropdown-item text-dark" href="{{ route('contacts.show', ['contact' => $contact->id, 'slug' => 'replay']) }}">
+                                            <a class="dropdown-item text-dark"
+                                                href="{{ route('contacts.show', ['contact' => $contact->id, 'slug' => 'replay']) }}">
                                                 <i class="ti ti-mail-forward"></i> رد
                                             </a>
-                                            <button class="dropdown-item text-dark" type="button" data-bs-toggle="modal" data-bs-target="#messageModal{{ $contact->id }}">
+                                            <button class="dropdown-item text-dark" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#messageModal{{ $contact->id }}">
                                                 <i class="ti ti-message-circle"></i> عرض الرسالة
                                             </button>
-                                            <a class="dropdown-item text-dark" href="{{ route('contacts.show', ['contact' => $contact->id, 'slug' => 'redirect']) }}">
+                                            <a class="dropdown-item text-dark"
+                                                href="{{ route('contacts.show', ['contact' => $contact->id, 'slug' => 'redirect']) }}">
                                                 <i class="ti ti-send"></i> إعادة توجيه
                                             </a>
                                         </div>
@@ -119,7 +131,7 @@
                                 </div>
                             </td>
                         </tr>
-        
+
                         <!-- Row for Large Screens (Table Format) -->
                         <tr class="d-none d-md-table-row">
                             <td>
@@ -138,6 +150,13 @@
                                     <i class="ti ti-eye text-primary"></i>
                                 </a>
                             </td>
+                            <td>
+                                @if ($contact->marketer)
+                                <i class="ti ti-user-check text-primary"></i> {{ $contact->marketer->name }}
+                                @else
+                                <span class="text-muted">لا يوجد مسوق</span>
+                                @endif
+                            </td>
                             <td class="text-end">
                                 <div class="dropdown">
                                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -147,20 +166,23 @@
                                         <button class="dropdown-item text-danger" type="button" wire:click="delete({{ $contact->id }})">
                                             <i class="ti ti-trash"></i> حذف
                                         </button>
-                                        <a class="dropdown-item text-dark" href="{{ route('contacts.show', ['contact' => $contact->id, 'slug' => 'replay']) }}">
+                                        <a class="dropdown-item text-dark"
+                                            href="{{ route('contacts.show', ['contact' => $contact->id, 'slug' => 'replay']) }}">
                                             <i class="ti ti-mail-forward"></i> رد
                                         </a>
-                                        <button class="dropdown-item text-dark" type="button" data-bs-toggle="modal" data-bs-target="#messageModal{{ $contact->id }}">
+                                        <button class="dropdown-item text-dark" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#messageModal{{ $contact->id }}">
                                             <i class="ti ti-message-circle"></i> عرض الرسالة
                                         </button>
-                                        <a class="dropdown-item text-dark" href="{{ route('contacts.show', ['contact' => $contact->id, 'slug' => 'redirect']) }}">
+                                        <a class="dropdown-item text-dark"
+                                            href="{{ route('contacts.show', ['contact' => $contact->id, 'slug' => 'redirect']) }}">
                                             <i class="ti ti-send"></i> إعادة توجيه
                                         </a>
                                     </div>
                                 </div>
                             </td>
                         </tr>
-        
+
                         <!-- Message Modal -->
                         <div class="modal fade" id="messageModal{{ $contact->id }}" tabindex="-1" aria-labelledby="messageModalLabel{{ $contact->id }}" aria-hidden="true">
                             <div class="modal-dialog">
@@ -171,7 +193,7 @@
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body text-wrap">
                                         {{ $contact->message }}
                                     </div>
                                 </div>
@@ -182,7 +204,7 @@
                 </tbody>
             </table>
         </div>
-        
+
 
 
         {{ $contacts->links() }}

@@ -22,9 +22,11 @@ return new class extends Migration
             $table->text('message');
             $table->string('replays')->nullable();
             $table->string('redirect')->nullable();
+            $table->unsignedBigInteger('marketer_id')->nullable(); 
+            $table->foreign('marketer_id')->references('id')->on('marketers')->onDelete('set null');
             $table->timestamps();
         });
-        
+
     }
 
     /**

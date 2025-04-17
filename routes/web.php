@@ -17,7 +17,7 @@ use App\Http\Controllers\Frontend\PageController;
 |
 */
 
-Route::get('/', [HomController::class, 'index'])->name('hom.index');
+Route::get('/', [HomController::class, 'index'])->name('hom.index')->middleware('store.referral');
 Route::get('/blogns', [PageController::class, 'blogns'])->name('blogns');
 Route::get('/blogns/{blogn}/{title?}', [PageController::class, 'show'])->name('blogns.show');
 
@@ -28,7 +28,13 @@ Route::middleware('auth')->group(function () {
     return redirect('/');
   })->name('logout');
 
-  require __DIR__ . '/dash.php';
+// Handle all missing routes and redirect to the homepage
+Route::fallback(function () {
+    return redirect('/');
+});
+
+    require __DIR__ . '/dash.php';
 });
 
 require __DIR__ . '/auth.php';
+

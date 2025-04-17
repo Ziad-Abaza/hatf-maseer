@@ -21,8 +21,8 @@ class CheckLanguage
             return $next($request);
         }
 
-        $supportedLocales = config('app.locales', ['en', 'ar']);
-        $defaultLocale = 'en';
+        $supportedLocales = config('app.locales', ['ar', 'en']);
+        $defaultLocale = 'ar';
 
         // 1. Check if 'lang' exists in the request
         if ($request->has('lang')) {

@@ -5,5 +5,6 @@
         rel="stylesheet">
     <!-- swiber -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- css style -->
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">

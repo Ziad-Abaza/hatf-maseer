@@ -85,6 +85,7 @@ class Kernel extends HttpKernel
         'permission' => \Spatie\Permission\Middleware\PermissionMiddleware::class,
         'role_or_permission' => \Spatie\Permission\Middleware\RoleOrPermissionMiddleware::class,
 
-        
+        /**** OTHER MIDDLEWARE custom ****/
+        'store.referral' => \App\Http\Middleware\StoreReferralCode::class,
     ];
 }

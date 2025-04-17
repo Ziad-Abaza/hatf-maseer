@@ -18,11 +18,11 @@ class CheckLocale
     {
         // Get the locale prefix from the URL
         $locale = $request->segment(1); // Get the first URL segment
-        
+
         // Check if the locale is not 'en' or 'ar'
         if (!in_array($locale, ['en', 'ar'])) {
-            // Add 'en' as the default locale while preserving the path
-            $newUrl = url('/en' . $request->getRequestUri());
+            // Add 'ar' as the default locale while preserving the path
+            $newUrl = url('/ar' . $request->getRequestUri());
 
             // Redirect to the new URL with the default locale
             return redirect($newUrl);

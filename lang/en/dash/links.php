@@ -33,4 +33,8 @@ return [
         'main_titel' => 'Blogs',
         'sub_titel' => 'Create'
     ],
+    'marketers' => [
+        'main_titel' => 'marketers',
+        'sub_titel' => 'Create'
+    ],
 ];

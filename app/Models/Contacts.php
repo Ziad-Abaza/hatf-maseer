@@ -19,14 +19,15 @@ class Contacts extends Model
         'city',
         'message',
         'replays',
+        'marketer_id',
         'redirect'
     ];
-    
+
 
     public function toSearchableArray()
     {
         $array = $this->toArray();
-    
+
         // Only return specific fields for indexing
         return [
             'id' => $this->id,
@@ -37,7 +38,13 @@ class Contacts extends Model
             'position' => $this->position,
             'city' => $this->city,
             'message' => $this->message,
+            'marketer_id' => $this->marketer_id,
         ];
     }
-    
+
+    public function marketer()
+    {
+        return $this->belongsTo(Marketer::class);
+    }
+
 }

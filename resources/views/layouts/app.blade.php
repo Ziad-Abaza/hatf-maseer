@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="csrf" content="{{ csrf_token() }}" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    {{-- <link rel="shortcut icon" href="{{asset('frontend/images/site-icon.ico')}}" type="image/x-icon"> --}}
     <title>{{ env('APP_Company') }}</title>
 
     <!-- Primary Meta Tags -->
@@ -17,7 +18,7 @@
     <meta content="{{ $settings['seo']['keywords'] }}" name="keywords">
     <meta content="{{ asset('storage/icons/' . $settings['branding']['logo']) }}" property="og:image">
     <meta content="{{ asset('storage/icons/' . $settings['branding']['logo']) }}" property="twitter:image">
-    <link href="{{ asset('storage/icons/' . $settings['branding']['favicon']) }}" }}" />
+    <link href="{{ asset('storage/icons/' . $settings['branding']['favicon']) }}" />
     @include('layouts.frontend_share.stylesheets')
     @stack('css')
     @include('layouts.frontend_share.scripts_header')
@@ -57,7 +58,7 @@
             @yield('content')
 
 
-            
+
         </div>
     </div>
 

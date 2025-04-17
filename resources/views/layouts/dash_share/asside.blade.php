@@ -193,6 +193,27 @@
                 {{-- // Home --}}
 
 
+                <!-- marketers -->
+                <li class="menu-item {{ route_is('marketers.*', 'open') }}" id="marketers">
+                    <a href="{{ router('marketers.index') }}" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-phone"></i>
+                        <div data-i18n="{{ __('marketers/index.main_titel') }}">
+                            {{ __('marketers/index.main_titel') }}</div>
+                        <div class="badge bg-primary rounded-pill ms-auto">0</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item {{ route_is('marketers.index', 'active') }}">
+                            <a href="{{ router('marketers.index') }}" class="menu-link">
+                                <div data-i18n="{{ __('marketers/index.main_titel') }}">
+                                    {{ __('marketers/index.main_titel') }}
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- side_bar -->
+
+
                 <!-- contacts -->
                 <li class="menu-item {{ route_is('contacts.*', 'open') }}" id="contacts">
                     <a href="{{ router('contacts.index') }}" class="menu-link menu-toggle">

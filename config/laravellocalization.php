@@ -6,9 +6,9 @@ return [
     // These are sorted by the native name, which is the order you might show them in a language selector.
     // Regional languages are sorted by their base language, so "British English" sorts as "English, British"
     'supportedLocales' => [
-        'en'          => ['name' => 'English',                'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
         'ar'          => ['name' => 'Arabic',                 'script' => 'Arab', 'native' => 'العربية', 'regional' => 'ar_AE'],
-    ],
+        'en'          => ['name' => 'English',                'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
+        ],
 
     // Requires middleware `LaravelSessionRedirect.php`.
     //
@@ -43,7 +43,7 @@ return [
     // If you want to display the locales in particular order in the language selector you should write the order here.
     //CAUTION: Please consider using the appropriate locale code otherwise it will not work
     //Example: 'localesOrder' => ['es','en'],
-    'localesOrder' => ['en','ar'],
+    'localesOrder' => ['ar','en'],
 
     // If you want to use custom language URL segments like 'at' instead of 'de-AT', you can map them to allow the
     // LanguageNegotiator to assign the desired locales based on HTTP Accept Language Header. For example, if you want

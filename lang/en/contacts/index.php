@@ -12,6 +12,7 @@ return [
     'name' => 'Name',
     'email' => 'Email',
     'phone' => 'Phone',
+    'marketer' => 'Marketer',
     'message' => 'Message',
     'replays' => 'Replays',
     'redirect' => 'Redirect',

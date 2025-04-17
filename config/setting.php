@@ -1,25 +1,25 @@
 <?php
 
 return array (
-  'social_media' => 
+  'social_media' =>
   array (
     'facebook' => 'https://www.facebook.com/share/14jvX4ZhJt/',
     'twitter' => 'https://x.com/maseer_ksa',
     'instagram' => 'https://www.instagram.com/maseer_ksa',
     'linkedin' => 'https://www.linkedin.com/',
   ),
-  'contact' => 
+  'contact' =>
   array (
     'email' => 'info@maseer.com.sa',
     'phone' => '0553242112',
     'address' => '4، Al Hasat, Buraydah 52321, Saudi Arabia',
   ),
-  'branding' => 
+  'branding' =>
   array (
     'logo' => '31739766079.png',
-    'favicon' => '31739766079.png',
+    'favicon' => '31744820217.ico',
   ),
-  'seo' => 
+  'seo' =>
   array (
     'title' => 'Reefer Boxes | Cold Store Rooms, Maintenance for Diesel Units And Hood clean Services',
     'description' => 'Techsup Business delivers advanced finance, IT, and HR solutions. From telemarketing and sales to outsourcing services, we empower businesses with professional support and innovative strategies.',

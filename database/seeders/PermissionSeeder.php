@@ -46,7 +46,7 @@ class PermissionSeeder extends Seeder
         'language-create',
         'language-edit',
         'language-delete',
-        
+
         'role-list',
         'role-create',
         'role-edit',
@@ -76,6 +76,11 @@ class PermissionSeeder extends Seeder
         'backup-edit',
         'backup-delete',
 
+
+        'marketer-list',
+        'marketer-create',
+        'marketer-edit',
+        'marketer-delete',
 
     ];
 

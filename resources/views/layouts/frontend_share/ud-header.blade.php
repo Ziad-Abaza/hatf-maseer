@@ -80,7 +80,7 @@
                                 {{-- <li><a class="dropdown-item lang-option" href="#" data-lang="EN">EN</a></li>
                                 <li><a class="dropdown-item lang-option" href="#" data-lang="AR">AR</a></li> --}}
                                 @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                    @if ($localeCode === 'en')
+                                    @if ($localeCode === 'ar')
                                         <li>
                                             <a class="dropdown-item lang-option" rel="alternate"
                                                 hreflang="{{ $localeCode }}" data-lang="{{ $localeCode }}"
@@ -88,14 +88,13 @@
                                                 <span class="align-middle">{{ $properties['native'] }}</span>
                                             </a>
                                         </li>
-                                    @elseif ($localeCode === 'ar')
-                                        <li>
-                                            <a class="dropdown-item lang-option" rel="alternate"
-                                                hreflang="{{ $localeCode }}" data-lang="{{ $localeCode }}"
-                                                onclick="changeLanguage(this)">
-                                                <span class="align-middle">{{ $properties['native'] }}</span>
-                                            </a>
-                                        </li>
+                                    @elseif ($localeCode === 'en')
+                                    <li>
+                                        <a class="dropdown-item lang-option" rel="alternate" hreflang="{{ $localeCode }}" data-lang="{{ $localeCode }}"
+                                            onclick="changeLanguage(this)">
+                                            <span class="align-middle">{{ $properties['native'] }}</span>
+                                        </a>
+                                    </li>
                                     @endif
                                 @endforeach
                             </ul>

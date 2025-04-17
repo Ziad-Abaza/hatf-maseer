@@ -31,4 +31,8 @@ return [
         'main_titel' => 'المدونات',
         'sub_titel' => 'إنشاء'
     ],
+    'marketers' => [
+        'main_titel' => 'المسوقين',
+        'sub_titel' => 'إنشاء'
+    ],
 ];

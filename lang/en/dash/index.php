@@ -1,4 +1,4 @@
-<?php 
+<?php
 return [
     'print' => 'Print',
     'export' => 'Export',
@@ -11,4 +11,7 @@ return [
     'show' => 'Show',
     'delete' => 'Delete',
     'delete_confirm' => 'Are you sure you want to delete this banner?',
+    'phone' => 'Phone Number',
+    'name' => 'Name',
+    'referral_code' => 'Referral Code',
 ];

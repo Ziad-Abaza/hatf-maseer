@@ -9,7 +9,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-W7VLW4G8');</script>
     <!-- End Google Tag Manager -->
-    
+
     <!-- ====== Head ======  -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,8 +25,9 @@
     <meta content="{{$settings['seo']['keywords']}}" name="keywords">
     <meta content="{{ asset('storage/icons/' . $settings['branding']['logo']) }}" property="og:image">
     <meta content="{{ asset('storage/icons/' . $settings['branding']['logo']) }}" property="twitter:image">
-    <link href="{{ asset('storage/icons/' . $settings['branding']['favicon']) }}" }}" />
-    
+    <link rel="icon" href="{{ asset('storage/icons/' . $settings['branding']['favicon']) }}" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('storage/icons/' . $settings['branding']['favicon']) }}">
+    <link rel="icon" type="image/png" href="{{ asset('storage/icons/' . $settings['branding']['favicon']) }}">
     @include('layouts.frontend_share.stylesheets')
     @stack('css')
     @include('layouts.frontend_share.scripts_header')
@@ -40,8 +41,8 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7VLW4G8"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
-    
+
+
     <!-- ====== Components ======  -->
     <!-- ====== Header Start ====== -->
     @include('layouts.frontend_share.ud-header')
@@ -49,6 +50,9 @@
 
     @yield('content')
 
+    <a href="https://wa.me/+966{{ config('setting.contact.phone') }}" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     <!-- ====== Footer Start ====== -->
     @include('layouts.frontend_share.ud-footer')
     <!-- ====== Footer End ====== -->

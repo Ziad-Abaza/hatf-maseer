@@ -39,11 +39,11 @@ Route::prefix('dash')->group(function () {
     Route::resource('backups', BackupController::class);
     Route::get('/backups/monitor', [BackupController::class,'monitor'])->name('backups.monitor');
     Route::post('/backups/retrive', [BackupController::class, 'retrive'])->name('backups.retrive');
-  
+
     //routes Home Page
     Route::resource('contacts', ContactsController::class)->except(['show']);
     Route::get('contacts/show/{contact}/{slug}', [ContactsController::class, 'show'])->name('contacts.show');
-    
+
     Route::resource('banners', BannerController::class);
 
     Route::resource('partenrs', PartnerController::class);
@@ -56,5 +56,7 @@ Route::prefix('dash')->group(function () {
 
     // blogs
     Route::resource('blogs', BlogController::class);
+
+    Route::resource('marketers', \App\Http\Controllers\Dash\MarketerController::class)->except(['show']);
 
 });
