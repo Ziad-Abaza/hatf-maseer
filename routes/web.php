@@ -19,8 +19,7 @@ use App\Http\Controllers\Frontend\PageController;
 
 Route::get('/', [HomController::class, 'index'])->name('hom.index')->middleware('store.referral');
 Route::get('/blogns', [PageController::class, 'blogns'])->name('blogns');
-Route::get('/blogns/{blogn}/{title?}', [PageController::class, 'show'])->name('blogns.show');
-
+Route::get('/blogns/{blog}/{title?}', [PageController::class, 'show'])->name('blogns.show');
 
 Route::middleware('auth')->group(function () {
   Route::post('logout', function () {

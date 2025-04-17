@@ -1,61 +1,61 @@
 @extends('layouts.frontend')
 
+@php
+$locale = app()->getLocale();
+$dir = $locale === 'ar' ? 'rtl' : 'ltr';
+$textAlign = $locale === 'ar' ? 'text-end' : 'text-start';
+
+$title = $locale === 'ar' ? de_ar($blog->title) : de_en($blog->title);
+$description = $locale === 'ar' ? de_ar($blog->descraption) : de_en($blog->descraption);
+@endphp
+
+@section('page_title', strip_tags($title))
+
 @section('content')
-    @php
-        $locale = app()->getLocale();
-        $dir = $locale === 'ar' ? 'rtl' : 'ltr';
-        $textAlign = $locale === 'ar' ? 'text-end' : 'text-start';
-
-        $title = $locale === 'ar' ? de_ar($blog->title) : de_en($blog->title);
-        $description = $locale === 'ar' ? de_ar($blog->descraption) : de_en($blog->descraption);
-    @endphp
-
-    <div class="container-fluid px-0" dir="{{ $dir }}">
-        <!-- Hero Header Section -->
-        <div class="blog-header py-5 py-md-7 mb-5 text-center position-relative">
-            <div class="header-overlay position-absolute top-0 start-0 w-100 h-100"></div>
-            <div class="container position-relative z-1">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <div class="main-title">
-                            <p class="display-5 fw-bold text-white mb-3 animate__animated animate__fadeInDown">
-                                {{ __('dash/blog.latest_blogs') }}
-                            </p>
-                            <h5 class="fw-medium text-white-75 mb-4 animate__animated animate__fadeIn animate__delay-1s">
-                                {{ __('dash/blog.stay_updated') }}
-                            </h5>
-                            <div class="header-divider mx-auto animate__animated animate__fadeIn animate__delay-1s"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Blog Content Section -->
-        <div class="container pb-5">
+<div class="container-fluid px-0" dir="{{ $dir }}">
+    <!-- Hero Header Section -->
+    <div class="blog-header py-5 py-md-7 mb-5 text-center position-relative">
+        <div class="header-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="container position-relative z-1">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
-                    <!-- Featured Image -->
-                    <div class="blog-featured-img mb-5 text-center">
-                        <img src="{{ asset('storage/images/' . $blog->img) }}"
-                            alt="{{ strip_tags($title) }}"
-                            class="img-fluid rounded-4 shadow-lg w-100"
-                            style="max-height: 500px; object-fit: cover;">
-                    </div>
-
-                    <!-- Blog Title -->
-                    <h1 class="display-4 fw-bold text-white text-center mb-5" id="blog_title">
-                        {!! $title !!}
-                    </h1>
-
-                    <!-- Blog Content -->
-                    <div class="blog-content {{ $textAlign }} lh-lg fs-5 text-white-75">
-                        {!! $description !!}
+                    <div class="main-title">
+                        {{-- <p class="display-5 fw-bold text-white mb-3 animate__animated animate__fadeInDown">
+                            {{ __('dash/blog.latest_blogs') }}
+                        </p> --}}
+                        <h5 class="fw-medium  display-6 text-white-75 fw-bold mt-5 mb-3 animate__animated animate__fadeIn animate__delay-1s">
+                            {{ strip_tags($title) }}
+                        </h5>
+                        <div class="header-divider mx-auto animate__animated animate__fadeIn animate__delay-1s"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Blog Content Section -->
+    <div class="container pb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <!-- Featured Image -->
+                <div class="blog-featured-img mb-5 text-center">
+                    <img src="{{ asset('storage/images/' . $blog->img) }}" alt="{{ strip_tags($title) }}"
+                        class="img-fluid rounded-4 shadow-lg w-100" style="max-height: 500px; object-fit: cover;">
+                </div>
+
+                <!-- Blog Title -->
+                {{-- <h1 class="display-4 fw-bold text-white text-center mb-5" id="blog_title">
+                    {!! $title !!}
+                </h1> --}}
+
+                <!-- Blog Content -->
+                <div class="blog-content {{ $textAlign }} lh-lg fs-5 text-white-75">
+                    {!! $description !!}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @section('css')
@@ -123,7 +123,7 @@
             padding-top: 5rem;
             padding-bottom: 5rem;
         }
-        
+
         #blog_title {
             font-size: 2.5rem;
         }
@@ -134,15 +134,15 @@
             padding-top: 4rem;
             padding-bottom: 4rem;
         }
-        
+
         .main-title p {
             font-size: 2.2rem;
         }
-        
+
         #blog_title {
             font-size: 2rem;
         }
-        
+
         .blog-content {
             font-size: 1.1rem;
         }
@@ -153,11 +153,11 @@
             padding-top: 3rem;
             padding-bottom: 3rem;
         }
-        
+
         .main-title p {
             font-size: 1.8rem;
         }
-        
+
         #blog_title {
             font-size: 1.6rem;
         }

@@ -17,8 +17,7 @@
     <meta name="csrf-token" content="{{csrf_token()}}" />
     <meta name="csrf" content="{{csrf_token()}}" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>{{env(('APP_Company'))}}</title>
-
+    <title>@yield('page_title', env('APP_Company'))</title>
     <!-- Primary Meta Tags -->
     <meta content="{{$settings['seo']['title']}}" name="title">
     <meta content="{{$settings['seo']['description']}}" name="description">

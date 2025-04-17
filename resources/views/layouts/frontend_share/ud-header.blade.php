@@ -65,10 +65,6 @@
                     </ul>
 
                     <div class="d-flex justify-content-center align-items-center">
-
-
-
-
                         <div class="dropdown">
                             <button class="btn lang dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,8 +73,6 @@
                                 </span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                {{-- <li><a class="dropdown-item lang-option" href="#" data-lang="EN">EN</a></li>
-                                <li><a class="dropdown-item lang-option" href="#" data-lang="AR">AR</a></li> --}}
                                 @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                     @if ($localeCode === 'ar')
                                         <li>
@@ -113,7 +107,6 @@
             const navbarCollapse = document.querySelector(".navbar-collapse");
             const navLinks = document.querySelectorAll(".nav-link");
 
-            // اغلاق النافبار عند الضغط على أي رابط
             navLinks.forEach(link => {
                 link.addEventListener("click", () => {
                     if (window.innerWidth <= 991) {
@@ -123,7 +116,6 @@
                 });
             });
 
-            // اغلاق النافبار عند الضغط خارجها
             document.addEventListener("click", (event) => {
                 if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
                     navbarCollapse.classList.remove("show");

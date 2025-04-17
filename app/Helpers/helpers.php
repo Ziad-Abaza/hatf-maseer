@@ -94,8 +94,8 @@ if (!function_exists('greetUser')) {
         {
             return LaravelLocalization::getCurrentLocaleDirection() === 'rtl';
         }
-    
-    
+
+
         function direction() :string
         {
             return !isRtl() ? 'right' : 'left';
@@ -107,46 +107,65 @@ if (!function_exists('greetUser')) {
 
          function prepareLocalizedData($ar, $en)
         {
-            
+
             return json_encode(['ar' => $ar, 'en' => $en], JSON_UNESCAPED_UNICODE);
         }
 
-        function de_ar($ar)
-        {
-            return json_decode($ar, true)['ar'];
-        }
-
-        function de_en($en)
-        {
-            return json_decode($en, true)['en'];
-        }
-    
-        function de_lang($data)
-        {
-            return json_decode($data, true)[app()->getLocale()] ?? null;
-        }
-        
+    // function de_ar($ar)
+    // {
+    //     return json_decode($ar, true)['ar'];
+    // }
+    function de_ar($ar)
+    {
+        $data = json_decode($ar, true);
+        return is_array($data) && isset($data['ar']) ? $data['ar'] : null;
+    }
 
 
-          function calcPrice($price, $discount=0){
+    // function de_en($en)
+    //     {
+    //         return json_decode($en, true)['en'];
+    //     }
+
+    //     function de_lang($data)
+    //     {
+    //         return json_decode($data, true)[app()->getLocale()] ?? null;
+    //     }
+    function de_en($en)
+    {
+        $data = json_decode($en, true);
+        return is_array($data) && isset($data['en']) ? $data['en'] : null;
+    }
+
+    function de_lang($data)
+    {
+        $decoded = json_decode($data, true);
+        $locale = app()->getLocale();
+        return is_array($decoded) && isset($decoded[$locale]) ? $decoded[$locale] : null;
+    }
+
+
+
+
+    function calcPrice($price, $discount=0){
             $totalTaxes = [];
             // Calculate all the taxes based on the provided tax percentages
             foreach (config('taxs_services') as $key => $taxes) {
                 $totalTaxes[] = $price * ($taxes / 100);  // Calculate tax based on price
             }
-        
+
             // Calculate total taxes
             $taxAmount = array_sum($totalTaxes);
-        
+
             // Calculate total before applying discount
             $totalBeforeDiscount = $price + $taxAmount;
-        
+
             // Calculate discount on the total amount (price + taxes)
             $discountAmount = $totalBeforeDiscount * ($discount / 100);
-        
+
             // Calculate final total after discount
             $total = $totalBeforeDiscount - $discountAmount;
-        
+
             return number_format($total, 2);  // Display final total with 2 decimal points
         }
 
