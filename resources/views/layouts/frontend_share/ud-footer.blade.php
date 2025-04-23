@@ -6,8 +6,11 @@
                     <img src="{{ asset('storage/icons/' . $settings['branding']['logo']) }}" width="110px" height="60px" alt="لوجو الشركة">
                 </div>
                 <div class="social-links">
-                    <a href="{{config('setting.social_media.twitter')}}" target="_blank">
-                        <img src="{{ asset('frontend/images/tiktok.svg') }}" alt="تويتر">
+                    <a href="{{config('setting.social_media.x')}}" target="_blank">
+                        <img src="{{ asset('frontend/images/icon-x.svg') }}" alt="تويتر">
+                    </a>
+                    <a href="{{config('setting.social_media.tiktok')}}" target="_blank">
+                        <img src="{{ asset('frontend/images/tiktok.svg') }}" alt="tiktok">
                     </a>
                     <a href="https://wa.me/+966{{ config('setting.contact.phone') }}" target="_blank">
                         <img src="{{ asset('frontend/images/whatsapp.svg') }}">

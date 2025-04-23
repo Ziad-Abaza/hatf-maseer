@@ -4,9 +4,10 @@ return array (
   'social_media' => 
   array (
     'facebook' => 'https://www.facebook.com/share/14jvX4ZhJt/',
-    'twitter' => 'https://x.com/maseer_ksa',
+    'x' => 'https://x.com/maseer_ksa',
     'instagram' => 'https://www.instagram.com/maseer_ksa',
     'linkedin' => 'https://www.linkedin.com/',
+    'tiktok' => 'https://www.tiktok.com/@maseer_ksa',
   ),
   'contact' => 
   array (
