@@ -29,20 +29,20 @@
             </div>
             <div class="container contact-info">
                 <ul class="list-unstyled row">
-                    <li class="col-md-6 col-sm-12 mb-2 translatable" data-ar="{{__('frontend/footer.country.country')}}"
+                    <li class="col-md-4 col-sm-12 mb-2 translatable" data-ar="{{__('frontend/footer.country.country')}}"
                         data-en="Kingdom of Saudi Arabia">
                         <a href="http://">{{__('frontend/footer.country.country')}}</a>
                     </li>
 
-                    <li class="col-md-6 col-sm-12 mb-2">
+                    <li class="col-md-4 col-sm-12 mb-2">
                      <a href="https://wa.me/+966{{ config('setting.contact.phone') }}?text=مرحبا+مسير" target="_blank">{{ __('frontend/footer.phones.phones') }}</a>
                     </li>
-                    <li class="col-md-6 col-sm-12 mb-2">
+                    <li class="col-md-4 col-sm-12 mb-2">
                     <a href="mailto:{{ config('setting.contact.email') }}">{{ config('setting.contact.email') }}</a>
                     </li>
-                    <li class="col-md-6 col-sm-12 mb-2">
+                    {{-- <li class="col-md-6 col-sm-12 mb-2">
                         <a href="{{__('frontend/footer.domain.domain')}}" target="_blank">{{__('frontend/footer.domain.domain')}}</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>
