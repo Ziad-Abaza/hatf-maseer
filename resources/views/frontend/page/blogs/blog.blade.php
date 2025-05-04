@@ -37,36 +37,38 @@ $textAlign = $locale === 'ar' ? 'text-end' : 'text-start';
         <div class="row g-4 gx-4 gy-5 justify-content-center">
             @foreach ($blogs as $blog)
             @php
-
             $title = $locale === 'ar' ? de_ar($blog->title) : de_en($blog->title);
+            $cleanTitle = strip_tags($title);
             $slug = $locale === 'ar'
-            ? Str::slug(de_ar($blog->title), '-', 'ar')
-            : Str::slug(de_en($blog->title), '-', 'en');
+            ? Str::slug($cleanTitle, '-', null)
+            : Str::slug($cleanTitle, '-', 'en');
             @endphp
 
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="blog-card-wrapper h-100">
-                    <div class="blog-card card border-0 h-100 overflow-hidden position-relative"
-                        style="background: #ffffff; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                        <a href="{{ route('blogns.show', ['blog' => $blog->id, 'title' => $slug]) }}"
-                            class="blog-image-link">
+                    <div class="blog-card card border-0 h-100 overflow-hidden position-relative">
+
+                        <a href="{{ route('blogns.show', ['blog' => $blog->id, 'title' => $slug]) }}" class="blog-image-link">
                             <img src="{{ asset('storage/images/' . $blog->img) }}" class="card-img-top img-fluid h-100"
-                                alt="{{ strip_tags($title) }}" style="object-fit: cover; min-height: 250px;">
-                            <div class="image-overlay"
-                                style="background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%);">
-                            </div>
+                                alt="{{ $cleanTitle }}" style="object-fit: cover; min-height: 250px;">
+                            <div class="image-overlay"></div>
                         </a>
-                        <div class="card-body position-relative z-1"
-                            style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 100%);">
+
+                        <div class="card-body">
+
                             <a href="{{ route('blogns.show', ['blog' => $blog->id, 'title' => $slug]) }}"
                                 class="text-decoration-none">
-                                <h5 class="card-title fw-bold mb-3 text-dark">{!! $title !!}</h5>
+                                <h5 class="card-title fw-bold mb-3 text-dark">
+                                    {{ $cleanTitle }}
+                                </h5>
                             </a>
+
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-muted small">
                                     <i class="far fa-calendar-alt me-2"></i>
                                     {{ $blog->created_at->format('M d, Y') }}
                                 </span>
+
                                 <a href="{{ route('blogns.show', ['blog' => $blog->id, 'title' => $slug]) }}"
                                     class="btn btn-sm btn-outline-dark">
                                     {{ __('Read More') }}
