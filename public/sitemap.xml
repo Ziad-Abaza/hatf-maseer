@@ -1,52 +1,109 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://maseer.com.sa/</loc>
-  <lastmod>2025-04-19T10:12:04+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://maseer.com.sa/</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://maseer.com.sa/blogns</loc>
-  <lastmod>2025-04-19T10:12:04+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://maseer.com.sa/blogns</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://maseer.com.sa/blogns/5/pstrongnbsproad-syan-ghrf-altbryd-oaltgmyd-oohdat-alnkl-almbrd-balryad-msyrstrongp</loc>
-  <lastmod>2025-04-19T10:12:04+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://maseer.com.sa/blogns/18/%D8%AB%D9%84%D8%A7%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D9%88%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D8%AF-%D8%AF%D9%84%D9%8A%D9%84%D9%83-%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84-%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%AD%D9%84-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%84%D8%AD%D9%81%D8%B8-%D8%A7%D9%84%D8%B7%D8%B9%D8%A7%D9%85</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://maseer.com.sa/blogns/4/pstrongsyan-maadat-tbryd-almtaaam-balryad-bkhbr-saaody-mothok-mnth-1990-msyrstrongp</loc>
-  <lastmod>2025-04-19T10:12:04+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://maseer.com.sa/blogns/17/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%85%D8%AF%D8%A7%D8%AE%D9%86-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D8%A8%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1-%D8%AD%D9%84%D9%88%D9%84-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D8%AA%D8%B6%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%A9-%D9%88%D8%A7%D9%84%D9%83%D9%81%D8%A7%D8%A1%D8%A9-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%B7%D8%A8%D8%AE%D9%83-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://maseer.com.sa/blogns/2/pstrongsnadyk-altbryd-fy-alsaaody-alhl-almthaly-lnkl-amn-ofaaal-maa-msyrstrongp</loc>
-  <lastmod>2025-04-19T10:12:04+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://maseer.com.sa/blogns/16/%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D8%AB%D9%84%D8%A7%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%AD%D9%84%D9%88%D9%84-%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D9%85%D8%AA%D9%86%D9%82%D9%84-%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84%D8%A9-%D8%AA%D8%AE%D8%AF%D9%85-%D8%A7%D9%84%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D8%A8%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://maseer.com.sa/blogns/1/h3strongtaarf-aalynastrongh3</loc>
-  <lastmod>2025-04-19T10:12:04+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://maseer.com.sa/blogns/15/%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9%D8%A7%D8%AA-%D8%AB%D9%84%D8%A7%D8%AC%D8%A7%D8%AA-%D9%85%D8%AC%D9%85%D8%AF%D8%A9-%D9%88%D9%85%D8%A8%D8%B1%D8%AF%D8%A9-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1-%D8%A7%D9%84%D8%AD%D9%84-%D8%A7%D9%84%D8%B0%D9%83%D9%8A-%D9%84%D8%AA%D8%AE%D8%B2%D9%8A%D9%86-%D8%A2%D9%85%D9%86-%D9%88%D9%81%D8%B9%D8%A7%D9%84-%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%D9%83-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://maseer.com.sa/blogns/4/9660553242112+</loc>
-  <lastmod>2025-04-19T10:12:04+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://maseer.com.sa/blogns/14/%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%B4%D9%81%D8%A7%D8%B7-%D8%A7%D9%84%D9%85%D8%B7%D8%A8%D8%AE-%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84-%D9%84%D9%84%D8%AD%D9%81%D8%A7%D8%B8-%D8%B9%D9%84%D9%89-%D9%86%D8%B8%D8%A7%D9%81%D8%A9-%D9%88%D9%83%D9%81%D8%A7%D8%A1%D8%A9-%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D8%A7%D9%84%D8%B4%D9%81%D8%B7</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
-  <loc>https://maseer.com.sa/blogns/2/9660553242112+</loc>
-  <lastmod>2025-04-19T10:12:04+00:00</lastmod>
-  <priority>0.51</priority>
+	<loc>https://maseer.com.sa/blogns/13/%D8%A3%D9%81%D8%B6%D9%84-%D9%88%D8%B1%D8%B4%D8%A9-%D8%AA%D8%B5%D9%84%D9%8A%D8%AD-%D9%85%D9%83%D9%8A%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AF%D9%84%D9%8A%D9%84%D9%83-%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84-%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A%D8%A9</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
-
-
+<url>
+	<loc>https://maseer.com.sa/blogns/12/%D8%A3%D9%81%D8%B6%D9%84-%D8%AD%D9%84%D9%88%D9%84-%D8%AB%D9%84%D8%A7%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D9%88%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AF%D9%84%D9%8A%D9%84%D9%83-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84-%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A8-%D9%84%D8%A7%D8%AD%D8%AA%D9%8A%D8%A7%D8%AC%D8%A7%D8%AA%D9%83</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/11/%D8%AA%D8%B5%D9%84%D9%8A%D8%AD-%D9%85%D9%83%D9%8A%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AF%D9%84%D9%8A%D9%84%D9%83-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84-%D9%84%D9%84%D8%AD%D9%81%D8%A7%D8%B8-%D8%B9%D9%84%D9%89-%D8%A8%D8%B1%D9%88%D8%AF%D8%A9-%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%D9%83-%D9%81%D9%8A-%D8%A3%D8%B5%D8%B9%D8%A8-%D8%A7%D9%84%D8%B8%D8%B1%D9%88%D9%81</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/10/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9-%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%BA%D8%B1%D9%81-%D8%A7%D9%84%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D9%88%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D8%AF-%D8%AF%D9%84%D9%8A%D9%84%D9%83-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84-%D9%84%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%A7%D9%84%D9%83%D9%81%D8%A7%D8%A1%D8%A9-%D9%88%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/9/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%85%D8%AF%D8%A7%D8%AE%D9%86-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D8%A8%D8%A7%D9%84%D9%82%D8%B7%D9%8A%D9%81-%D8%AD%D9%84%D9%88%D9%84-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%84%D8%A3%D9%85%D8%A7%D9%86-%D9%85%D8%B7%D8%A8%D8%AE%D9%83-%D9%88%D9%83%D9%81%D8%A7%D8%A1%D8%A9-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/8/%D8%AA%D8%B5%D9%84%D9%8A%D8%AD-%D9%83%D9%85%D8%A8%D8%B1%D9%88%D8%B3%D8%B1-%D9%85%D9%83%D9%8A%D9%81-%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84-%D9%85%D9%86-%D9%85%D8%B5%D9%86%D8%B9-%D9%85%D8%B3%D9%8A%D8%B1-%D9%84%D8%B6%D9%85%D8%A7%D9%86-%D9%83%D9%81%D8%A7%D8%A1%D8%A9-%D8%A7%D9%84%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/7/%D8%A3%D9%81%D8%B6%D9%84-%D8%B4%D8%B1%D9%83%D8%A9-%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%AB%D9%84%D8%A7%D8%AC%D8%A7%D8%AA-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%B6%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D9%85%D8%B1%D8%A7%D8%B1%D9%8A%D8%A9-%D8%B9%D9%85%D9%84%D9%83-%D8%A8%D9%83%D9%81%D8%A7%D8%A1%D8%A9-%D8%AF%D9%88%D9%86-%D8%A3%D8%B9%D8%B7%D8%A7%D9%84</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns?page=2</loc>
+	<lastmod>2025-05-25T12:04:40+01:00</lastmod>
+	<priority>0.9</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/6/%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%AB%D9%84%D8%A7%D8%AC%D8%A7%D8%AA-%D8%AA%D9%88%D8%B4%D9%8A%D8%A8%D8%A7-%D8%AC%D8%AF%D8%A9-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D8%AA%D8%B6%D9%85%D9%86-%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D9%85%D8%AB%D8%A7%D9%84%D9%8A-%D9%88%D8%A3%D8%AF%D8%A7%D8%A1-%D8%B7%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D8%A3%D9%85%D8%AF</loc>
+	<lastmod>2025-05-25T12:04:44+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/5/%D8%B1%D9%88%D8%A7%D8%AF-%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%BA%D8%B1%D9%81-%D8%A7%D9%84%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D9%88%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D8%AF-%D9%88%D9%88%D8%AD%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%82%D9%84-%D8%A7%D9%84%D9%85%D8%A8%D8%B1%D8%AF-%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D8%B3%D9%8A%D8%B1</loc>
+	<lastmod>2025-05-25T12:04:44+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/4/%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%85%D8%B9%D8%AF%D8%A7%D8%AA-%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%A8%D8%AE%D8%A8%D8%B1%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D9%88%D8%AB%D9%88%D9%82%D8%A9-%D9%85%D9%86%D8%B0-1990-%D9%85%D8%B3%D9%8A%D8%B1</loc>
+	<lastmod>2025-05-25T12:04:44+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/2/%D8%B5%D9%86%D8%A7%D8%AF%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D9%84-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A-%D9%84%D9%86%D9%82%D9%84-%D8%A2%D9%85%D9%86-%D9%88%D9%81%D8%B9%D8%A7%D9%84-%D9%85%D8%B9-%D9%85%D8%B3%D9%8A%D8%B1</loc>
+	<lastmod>2025-05-25T12:04:44+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns/1/%D8%AA%D8%B9%D8%B1%D9%81-%D8%B9%D9%84%D9%8A%D9%86%D8%A7</loc>
+	<lastmod>2025-05-25T12:04:44+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://maseer.com.sa/blogns?page=1</loc>
+	<lastmod>2025-05-25T12:04:44+01:00</lastmod>
+	<priority>0.9</priority>
+</url>
 </urlset>
